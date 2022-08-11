@@ -40,5 +40,6 @@
       }
     }
   },
-  "defaultProject": "empty"
+
+  "defaultProject": "cruise-browser"
 }

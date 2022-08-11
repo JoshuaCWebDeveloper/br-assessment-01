@@ -1,6 +1,6 @@
 {
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "apps/empty/src",
+  "sourceRoot": "apps/cruise-browser/src",
   "projectType": "application",
   "targets": {
     "build": {
@@ -9,13 +9,16 @@
       "defaultConfiguration": "production",
       "options": {
         "compiler": "babel",
-        "outputPath": "dist/apps/empty",
-        "index": "apps/empty/src/index.html",
+        "outputPath": "dist/apps/cruise-browser",
+        "index": "apps/cruise-browser/src/index.html",
         "baseHref": "/",
-        "main": "apps/empty/src/main.tsx",
-        "polyfills": "apps/empty/src/polyfills.ts",
-        "tsConfig": "apps/empty/tsconfig.app.json",
-        "assets": ["apps/empty/src/favicon.ico", "apps/empty/src/assets"],
+        "main": "apps/cruise-browser/src/main.tsx",
+        "polyfills": "apps/cruise-browser/src/polyfills.ts",
+        "tsConfig": "apps/cruise-browser/tsconfig.app.json",
+        "assets": [
+          "apps/cruise-browser/src/favicon.ico",
+          "apps/cruise-browser/src/assets"
+        ],
         "styles": [],
         "scripts": [],
         "webpackConfig": "@nrwl/react/plugins/webpack"
@@ -30,8 +33,8 @@
         "production": {
           "fileReplacements": [
             {
-              "replace": "apps/empty/src/environments/environment.ts",
-              "with": "apps/empty/src/environments/environment.prod.ts"
+              "replace": "apps/cruise-browser/src/environments/environment.ts",
+              "with": "apps/cruise-browser/src/environments/environment.prod.ts"
             }
           ],
           "optimization": true,
@@ -47,15 +50,15 @@
       "executor": "@nrwl/web:dev-server",
       "defaultConfiguration": "development",
       "options": {
-        "buildTarget": "empty:build",
+        "buildTarget": "cruise-browser:build",
         "hmr": true
       },
       "configurations": {
         "development": {
-          "buildTarget": "empty:build:development"
+          "buildTarget": "cruise-browser:build:development"
         },
         "production": {
-          "buildTarget": "empty:build:production",
+          "buildTarget": "cruise-browser:build:production",
           "hmr": false
         }
       }
@@ -64,14 +67,14 @@
       "executor": "@nrwl/linter:eslint",
       "outputs": ["{options.outputFile}"],
       "options": {
-        "lintFilePatterns": ["apps/empty/**/*.{ts,tsx,js,jsx}"]
+        "lintFilePatterns": ["apps/cruise-browser/**/*.{ts,tsx,js,jsx}"]
       }
     },
     "test": {
       "executor": "@nrwl/jest:jest",
-      "outputs": ["coverage/apps/empty"],
+      "outputs": ["coverage/apps/cruise-browser"],
       "options": {
-        "jestConfig": "apps/empty/jest.config.ts",
+        "jestConfig": "apps/cruise-browser/jest.config.ts",
         "passWithNoTests": true
       }
     }

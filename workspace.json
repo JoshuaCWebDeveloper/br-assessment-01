@@ -2,7 +2,6 @@
   "$schema": "./node_modules/nx/schemas/workspace-schema.json",
   "version": 2,
   "projects": {
-    "empty": "apps/empty",
-    "empty-e2e": "apps/empty-e2e"
+    "cruise-browser": "apps/cruise-browser"
   }
 }
