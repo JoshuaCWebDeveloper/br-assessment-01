@@ -1,94 +1,25 @@
-
-
 # CloudFe02
 
-This project was generated using [Nx](https://nx.dev).
+This is the state of the assessment after 3 hours.
 
-<p style="text-align: center;"><img src="https://raw.githubusercontent.com/nrwl/nx/master/images/nx-logo.png" width="450"></p>
+## Instructions
 
-🔎 **Smart, Fast and Extensible Build System**
+Run `npm install` and then `npm start` to run the app locally.
 
-## Adding capabilities to your workspace
+## Overview
 
-Nx supports many plugins which add capabilities for developing different types of applications and different tools.
+While I was able to accomplish the assignment features as a minimum level, I wasn't able to polish any of them or add on extra features before I ran out of time.
 
-These capabilities include generating applications, libraries, etc as well as the devtools to test, and build projects as well.
+#### Mistake in reviewing assignment
 
-Below are our core plugins:
+Although I was instructed to ask any questions I had before starting the assignment, upon starting, I realized that I had not examined the data API carefully enough. I had a couple of questions regarding the requirements; however, because I did not ask them until after I had started, I did not give enough time to have them answered.
 
-- [React](https://reactjs.org)
-  - `npm install --save-dev @nrwl/react`
-- Web (no framework frontends)
-  - `npm install --save-dev @nrwl/web`
-- [Angular](https://angular.io)
-  - `npm install --save-dev @nrwl/angular`
-- [Nest](https://nestjs.com)
-  - `npm install --save-dev @nrwl/nest`
-- [Express](https://expressjs.com)
-  - `npm install --save-dev @nrwl/express`
-- [Node](https://nodejs.org)
-  - `npm install --save-dev @nrwl/node`
+The result of this is that where the instructions mention the "ship name" the device make/model/platform is used instead. Also, sorting logic is based on the year.
 
-There are also many [community plugins](https://nx.dev/community) you could add.
+#### Next steps
 
-## Generate an application
+If I were going to continue on this project, I would focus on the following features and improvements:
 
-Run `nx g @nrwl/react:app my-app` to generate an application.
-
-> You can use any of the plugins above to generate applications as well.
-
-When using Nx, you can create multiple applications and libraries in the same workspace.
-
-## Generate a library
-
-Run `nx g @nrwl/react:lib my-lib` to generate a library.
-
-> You can also use any of the plugins above to generate libraries as well.
-
-Libraries are shareable across libraries and applications. They can be imported from `@cloud-fe-02/mylib`.
-
-## Development server
-
-Run `nx serve my-app` for a dev server. Navigate to http://localhost:4200/. The app will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `nx g @nrwl/react:component my-component --project=my-app` to generate a new component.
-
-## Build
-
-Run `nx build my-app` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `nx test my-app` to execute the unit tests via [Jest](https://jestjs.io).
-
-Run `nx affected:test` to execute the unit tests affected by a change.
-
-## Running end-to-end tests
-
-Run `nx e2e my-app` to execute the end-to-end tests via [Cypress](https://www.cypress.io).
-
-Run `nx affected:e2e` to execute the end-to-end tests affected by a change.
-
-## Understand your workspace
-
-Run `nx graph` to see a diagram of the dependencies of your projects.
-
-## Further help
-
-Visit the [Nx Documentation](https://nx.dev) to learn more.
-
-
-
-## ☁ Nx Cloud
-
-### Distributed Computation Caching & Distributed Task Execution
-
-<p style="text-align: center;"><img src="https://raw.githubusercontent.com/nrwl/nx/master/images/nx-cloud-card.png"></p>
-
-Nx Cloud pairs with Nx in order to enable you to build and test code more rapidly, by up to 10 times. Even teams that are new to Nx can connect to Nx Cloud and start saving time instantly.
-
-Teams using Nx gain the advantage of building full-stack applications with their preferred framework alongside Nx’s advanced code generation and project dependency graph, plus a unified experience for both frontend and backend developers.
-
-Visit [Nx Cloud](https://nx.app/) to learn more.
+1. Performance of the table - filtering has some significant performance deficits likely due to a naive implementation of the filtering and sorting logic.
+2. Finish map implementation - I had a cool map feature that I started but did not have time to fully implement (more work into examining the coordinates given in the API is needed).
+3. Table enrichment - More fields could be added to the table itself. Additional UI features like country flags, refresh buttons, and URL links could also be added.
